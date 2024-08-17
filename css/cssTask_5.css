@@ -1,0 +1,86 @@
+
+/* End Variables*/
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../images/139-7.jpg);
+    background-size:cover;
+}
+.container {
+    padding-top:150px ;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+    text-align: center;
+
+}
+/* Small */
+@media (min-width: 750px ){
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px ){
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px ){
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+.page-title {
+    color:whitesmoke;
+}
+.sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));   
+}
+
+.feat {
+    position: relative;
+    width: 350px;
+    background-color: whitesmoke;
+    height: 450px;
+}
+.container .feat img {
+    width: 350px;
+    height: 220px;
+}
+.container .sections .feat p.time {
+    position: absolute;
+    top: 39%;
+    left: 40%;
+    border-radius: 8px 8px 0 0;
+    height: 30px; 
+    width: 50%;
+    background-color: #06b626 ;
+}
+div.fee p {
+    position: absolute;
+    bottom: 0%;
+    padding: 10px; 
+    }
+div.fee p:last-child{
+    position: absolute;
+    bottom: 0%;
+    left: 70%;
+}
+.line {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    height: 2px;
+    background-color: #999;
+}
